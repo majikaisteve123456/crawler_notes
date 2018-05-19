@@ -21,7 +21,7 @@ Requests
 
 
 
-![picture](picture\picture1.png)
+![picture](https://github.com/majikaisteve123456/crawler_notes/blob/master/picture1.png?raw=true)
 
 r.status_code为200即表示为访问成功
 
@@ -42,7 +42,7 @@ r.headers:返回get请求的页面的头部信息
 
 
 
-![picture2](picture\picture2.png)
+![picture2](https://github.com/majikaisteve123456/crawler_notes/blob/master/picture2.png?raw=true)
 
 1. if r.status_code =200
    可以使用r.text r.encoding r.apparent_encoding r.content 去解析
@@ -61,7 +61,7 @@ requests.get(url)不一定经常能够使用，网络连接有风险
 
 
 
-![picture3](picture\picture3.png)
+![picture3](https://github.com/majikaisteve123456/crawler_notes/blob/master/picture3.png?raw=true)
 
 requests.ConnectionError 拒绝连接是指服务器的防火墙拒绝连接  
 
@@ -71,7 +71,7 @@ requests.ConnectTimeout 是指与远程服务器连接过程所发生的超时�
 
 requests.Timeout 是指发出URL请求到获得内容整个过程的异常。
 
-![picture4](picture/picture4.png)   
+![picture4](https://github.com/majikaisteve123456/crawler_notes/blob/master/picture4.png?raw=true)   
 
 
 ##爬取网页的通用代码框架
