@@ -17,7 +17,9 @@ Requests
 >r=requests.get("http://www.baidud.com")  
 >print(r.status_code)  
 >r.enconding='utf-8'  
->print(r.text)  
+>print(r.text)     
+
+
 
 ![picture](picture\picture1.png)
 
@@ -36,7 +38,9 @@ params:url中的额外参数，字典或字节流格式，可选
 
 type(r):class 'requests.models.Response'
 
-r.headers:返回get请求的页面的头部信息 
+r.headers:返回get请求的页面的头部信息   
+
+
 
 ![picture2](picture\picture2.png)
 
@@ -53,7 +57,10 @@ r.apparent_enconding:根据网页内容分析出的编码格式
 #爬取网页的通用代码框架
 ---
 通用代码框架：一组代码，可以准确可靠地爬取网页内容  
-requests.get(url)不一定经常能够使用，网络连接有风险
+requests.get(url)不一定经常能够使用，网络连接有风险    
+
+
+
 ![picture3](picture\picture3.png)
 
 requests.ConnectionError 拒绝连接是指服务器的防火墙拒绝连接  
@@ -73,7 +80,7 @@ requests.Timeout 是指发出URL请求到获得内容整个过程的异常。
 >>try:  
 >>>r=
 >
- 
+
 
 
 
