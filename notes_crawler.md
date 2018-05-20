@@ -20,7 +20,6 @@ Requests
 >print(r.text)     
 
 
-
 ![picture](https://github.com/majikaisteve123456/crawler_notes/blob/master/picture1.png?raw=true)
 
 r.status_code为200即表示为访问成功
@@ -74,12 +73,41 @@ requests.Timeout 是指发出URL请求到获得内容整个过程的异常。
 ![picture4](https://github.com/majikaisteve123456/crawler_notes/blob/master/picture4.png?raw=true)   
 
 
-##爬取网页的通用代码框架
->import requests  
->def getHTMLText(url)    
->>try:  
->>>r=
->
+##爬取网页的通用代码框架  
+	import requests
+    def getHtmlText(url):
+        try:  
+			r=requests.get(url,timeout=30)  
+            r.raise_for_status()#如果状态不是200，引发HTTPError异常  
+            r.encoding=r.apparent_encongding
+            return r.text
+         except:  
+            return "产生异常"    
+
+ 上述代码中r.encoding=r.apparent_enconding使代码解码正确  
+使用上述代码框架是用户爬取更加稳定  
+
+#HTTP协议及Requests库的方法  
+---
+HTTP 超文本传输协议  
+HTTP是一个基于“请求与响应”模式的、无状态的应用层协议  
+无状态是指第一次请求和第二次请求之间没有关联  
+采用URL作为定位网络资源的标识  
+URL格式
+http://host[:port][path]  
+host:合法的Internet主机域名或IP地址  
+port：端口号，缺省为80  
+path：资源在服务器上路径   
+URL:是通过HTTP协议存取资源的Internet路径，一个URL对应一个数据资源  
+
+
+
+
+  
+
+ 
+
+
 
 
 
