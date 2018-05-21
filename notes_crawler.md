@@ -100,6 +100,27 @@ port：端口号，缺省为80
 path：资源在服务器上路径   
 URL:是通过HTTP协议存取资源的Internet路径，一个URL对应一个数据资源  
 
+###http对资源的操作
+！[picture5]()
+Requests对资源的操作对应http协议对资源的操作
+  
+当发现资源过于大时，可以通过HEAD操作获取该资源的头部信息，对头部信息进行分析，得到概要信息。
+！[picture6]()  
+
+使用PATCH 对资源进行局部的更新。好处：节省网络带宽   
+
+如果向URL POST一个字符串自动编码为data  
+但是如果向URL POST一个字典，存储到表单字段下
+
+#Requests库的主要方法解析
+---
+requests.request(method,url,**kwargs)  
+method:请求方式
+url:拟获取页面的url链接 
+
+OPTIONS:获取服务端和客户端交互的参数  
+
+
 
 
 
